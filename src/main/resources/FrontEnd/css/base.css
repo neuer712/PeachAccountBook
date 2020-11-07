@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+
+.title{
+    color: #00a2e8;
+    font-size: 30px;
+    line-height: 67px;
+    padding-left: 68px;
+    background: #fff url(../img/keji.png) 25px 10px no-repeat;
+    background-size: 50px 50px;
+    border-radius: 3px;
+}
+
+.caption{
+    width: 200px;
+    background-color: #00a2e8;
+    float: left;
+}
+.caption > .item{
+    height: 70px;
+    line-height: 70px;
+    padding-left: 68px;
+    border-bottom: 3px solid #fff;
+    font-size: 24px;
+    color: #fff;
+}
+
+.content-caption > a{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #00a2e8;
+    border-radius: 5px;
+    margin-right: 20px;
+    color: #fff;
+}
+.content-caption > a:hover{
+    background-color: #fff;
+    color: #00a2e8;
+}
+.content-caption > select{
+    margin-left: 500px;
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 15px;
+    border: 2px solid #00a2e8;
+    border-radius: 5px;
+    outline: none;
+    color: #00a2e8;
+}
+.content-caption > .date-select{
+    width: 143px;
+    height: 36px;
+    font-size: 16px;
+    padding-left: 15px;
+    border: 2px solid #00a2e8;
+    border-radius: 5px;
+    outline: none;
+    color: #00a2e8;
+    margin-left: 50px;
+}
+
+.tbody > .trow > .item{
+    float: left;
+}

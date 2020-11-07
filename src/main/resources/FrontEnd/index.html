@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桃桃记账</title>
+    <link rel="icon" href="img/keji.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <div class="title">桃桃记账</div>
+    <div class="container">
+        <div class="caption">
+            <div class="item" id="account">账本</div>
+            <div class="item" id="statics">统计</div>
+            <div class="item" id="setting">管理</div>
+        </div>
+        <div class="content">
+            <div class="content-caption">
+                <a href="#" class="addone">新增一笔</a>
+                <a href="#" class="addincome">新增收入</a>
+
+                <select name="" id="">
+                    <option value="date" class="opt">按日</option>
+                    <option value="week" class="opt">按周</option>
+                    <option value="month" class="opt">按月</option>
+                    <option value="period" class="opt">时间段</option>
+                </select>
+
+                <input type="date" class="date-select">
+            </div>
+            <div class="theader">
+                <div class="item">名称</div>
+                <div class="item">类型</div>
+                <div class="item">数目</div>
+                <div class="item">备注</div>
+                <div class="item">时间</div>
+            </div>
+            <div class="tbody">
+                <div class="trow">
+                    <div class="item">蒙牛酸酸乳</div>
+                    <div class="item">食品</div>
+                    <div class="item">15.00</div>
+                    <div class="item">不好喝</div>
+                    <div class="item">2020-11-7&nbsp;&nbsp;07:30</div>
+                </div>
+                <div class="trow">
+                    <div class="item">水费</div>
+                    <div class="item">水电费</div>
+                    <div class="item">57.00</div>
+                    <div class="item">10月的水费</div>
+                    <div class="item">2020-11-7&nbsp;&nbsp;15:17</div>
+                </div>
+
+
+            </div>
+            <div class="tfoot">
+                <a href="javascript:void(0)">第 <input type="text" class="page"> 页</a>
+                <a href="#">共 <span>1</span> 页</a>
+                <a href="#">首页</a>
+                <a href="#">上一页</a>
+                <a href="#">下一页</a>
+                <a href="#">尾页</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
