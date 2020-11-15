@@ -1,72 +1,199 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Microsoft YaHei";
-}
-
+/* title */
 .title{
-    color: #00a2e8;
-    font-size: 30px;
-    line-height: 67px;
-    padding-left: 68px;
-    background: #fff url(../img/keji.png) 25px 10px no-repeat;
-    background-size: 50px 50px;
-    border-radius: 3px;
+    background-color: #343b3e;
+}
+.title > .wrap > a{
+    display: inline-block;
+    width: 300px;
+    height: 115px;
+}
+.title > .wrap > a > img{
+    margin-top: 20px;
 }
 
-.caption{
-    width: 200px;
-    background-color: #00a2e8;
-    float: left;
+/* main content */
+.content{
+    background-color: #dbd8d3;
 }
-.caption > .item{
-    height: 70px;
+.content > .wrap{
+    height: 1100px;
+}
+
+/* slider */
+.slider{
+    width: 250px;
+    height: 1014px;
+    background-color: #343b3e;
+    float: left;
+    padding-top: 86px;
+}
+.slider > .item{
+    height: 69px;
     line-height: 70px;
-    padding-left: 68px;
-    border-bottom: 3px solid #fff;
     font-size: 24px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid #dbd8d3;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.slider > .item:hover{
+    background-color: #fe8c3e;
+    border: none;
+}
+
+/* table */
+.table{
+    width: 950px;
+    float: right;
+}
+
+/* table-caption */
+.table-caption{
+    width: 910px;
+    margin-left: 40px;
+    padding: 16px 0;
+}
+
+.table-caption .fl .add,
+.table-caption  .fr .select,
+.table-caption > .fr > .date-select input{
+    display: inline-block;
+    width: 120px;                                                                                               
+    height: 53px;
+    line-height: 53px;
+    margin-right: 46px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fe8c3e;
+    border-radius: 5px;
     color: #fff;
 }
+.table-caption  .add:hover{
+    background-color: #fff;
+    color: #fe8c3e;
+}
+.table-caption > .fr > .dropdown{
+    width: 150px;
+    margin-right: 33px;
+    position: relative;
+}
+.table-caption > .fr > .dropdown >.select,
+.table-caption > .fr > .date-select > input{
+    width: 150px;
+    background-color: #343b3e;
+    margin-right: 0;
+}
+.table-caption > .fr > .date-select > input{
+    outline: none;
+    border: none;
+}
 
-.content-caption > a{
+.table-caption > .fr > .dropdown > .dropdown-layer{
+    display: none;
+    position: absolute;
+    width: 150px;
+    height: 212px;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    top: 53px;
+    color: #343b3e;
+    text-align: center;
+}
+.table-caption > .fr > .dropdown > .dropdown-layer > .opt{
+    height: 53px;
+    line-height: 53px;
+    font-size: 20px;
+}
+/* .table-caption > .fr > .dropdown > .dropdown-layer > .opt:hover{
+    background-color: #343b3e;
+    color: #fff;
+}
+.table-caption > .fr > .dropdown:hover .table-caption > .fr > .dropdown >.activeselect{
+    background-color: #fff;
+    color: #343b3e;
+} */
+
+/* theader */
+.square{
+    height: 65px;
+    width: 130px;
+    padding-left: 40px;
+    font-size: 14px;
+    color: #343b3e;
+    text-align: center;
+    word-wrap:break-word;
+}
+.theader > .square{
+    font-weight: bold;
+}
+.square:nth-child(3){
+    width: 110px;
+}
+.square:nth-child(4),
+.square:nth-child(5){
+    width: 190px;
+}
+
+/* tbody */
+.tbody{
+    width: 950px;
+}
+
+
+/* tfoot */
+.tfoot{
+    width: 950px;
+    text-align: center;
+}
+.tfoot > .page{
     display: inline-block;
-    width: 80px;
+    width: 60px;
     height: 40px;
     line-height: 40px;
-    font-size: 16px;
-    text-align: center;
-    background-color: #00a2e8;
+    background-color: #343b3e;
     border-radius: 5px;
-    margin-right: 20px;
     color: #fff;
 }
-.content-caption > a:hover{
-    background-color: #fff;
-    color: #00a2e8;
+.tfoot > a.pageCurrent{
+    width: 110px;
 }
-.content-caption > select{
-    margin-left: 500px;
+.tfoot > a.pageSum{
+    margin-left: 30px;
     width: 80px;
-    height: 40px;
-    font-size: 16px;
-    padding-left: 15px;
-    border: 2px solid #00a2e8;
-    border-radius: 5px;
-    outline: none;
-    color: #00a2e8;
 }
-.content-caption > .date-select{
-    width: 143px;
-    height: 36px;
-    font-size: 16px;
-    padding-left: 15px;
-    border: 2px solid #00a2e8;
-    border-radius: 5px;
+.tfoot .pageNumber{
+    width: 50px;
+    border: none;
     outline: none;
-    color: #00a2e8;
-    margin-left: 50px;
+    background-color: #343b3e;
+    color: #fff;
+    text-align: center;
 }
 
-.tbody > .trow > .item{
-    float: left;
+/* footer */
+.footer{
+    width: 100%;
+}
+.footer p{
+    height: 60px;
+    line-height: 60px;
+    background-color: #343b3e;
+    font-size: 14px;
+    text-align: center;
+    color: #dbd8d3;
+}
+
+
+.table-caption > .fr > .dropdown:hover .select{
+    background-color: #fff;
+    color: #343b3e;
+}
+.table-caption > .fr > .dropdown:hover .dropdown-layer{
+    display: block;
+}
+.table-caption > .fr > .dropdown > .dropdown-layer > .opt:hover {
+    background-color: #343b3e;
+    color: #fff;
+    border-radius: 5px;
 }
