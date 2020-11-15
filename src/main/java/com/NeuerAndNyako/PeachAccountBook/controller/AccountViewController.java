@@ -5,8 +5,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.NeuerAndNyako.PeachAccountBook.bean.AccountItemPage;
-
 @Controller
 
 public class AccountViewController {
@@ -15,6 +13,6 @@ public class AccountViewController {
 	
 	@RequestMapping("/index")
 	public String getAccountItemPage() {
-		return "FrontEnd/index";
+		return "index";
 	}
 }
