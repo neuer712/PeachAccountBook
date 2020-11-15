@@ -1,11 +1,13 @@
 package com.NeuerAndNyako.PeachAccountBook.bean;
 
 import java.util.List;
+import java.util.Map;
 
 import com.NeuerAndNyako.PeachAccountBook.entity.AccountItem;
 
 public class AccountItemPage {
 	private List<AccountItem> pageAccounts;
+	private Map<Integer,String> itemTypeMap;
 	private Integer pageNum;
 	private Integer totalPageNum;
 	private Integer totalAccountNum;
@@ -14,6 +16,12 @@ public class AccountItemPage {
 	}
 	public void setPageAccounts(List<AccountItem> pageAccounts) {
 		this.pageAccounts = pageAccounts;
+	}
+	public Map<Integer, String> getItemTypeMap() {
+		return itemTypeMap;
+	}
+	public void setItemTypeMap(Map<Integer, String> itemTypeMap) {
+		this.itemTypeMap = itemTypeMap;
 	}
 	public Integer getPageNum() {
 		return pageNum;
