@@ -19,7 +19,7 @@ public class ItemType {
 	@Column(name="c_type_name")
 	private String typeName;
 	
-	@Column(name="c_type_name")
+	@Column(name="i_exist")
 	private Integer exist;
 	
 	public Integer getTypeId() {
