@@ -22,4 +22,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 
 ### DEMO
-[demo](https://neuer712.github.io/PeachAccountBook/src/main/resources/peachaccount/index.html)
+[demo](https://neuer712.github.io/PeachAccountBook/src/main/resources/peachaccount/dist/index.html)
