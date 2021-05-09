@@ -34,4 +34,5 @@ build/
 
 ### node_modules ***
 PeachServer/PeachServer/node_modules/
+PeachFrontEnd/peach-account-book/node_modules/
 .DS_Store
